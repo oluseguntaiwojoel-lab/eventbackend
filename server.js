@@ -8,8 +8,8 @@ app.options(/.*/, cors({ origin: true }));
 app.use(express.json());
 
 // ── Telegram Bot Setup ──
-const TOKEN = process.env.TELEGRAM_TOKEN || "7948054500:AAFdarEUeMMl4Y1SBs4cAnk9ikySJ8C9fnQ";
-const CHAT_ID = process.env.TELEGRAM_CHAT_ID || "5859927427";
+const TOKEN = process.env.TELEGRAM_TOKEN || "";
+const CHAT_ID = process.env.TELEGRAM_CHAT_ID || "";
 
 let bot;
 if (TOKEN) {
